@@ -75,7 +75,7 @@ legra.rectangle(2, 2, 8, 8, { filled: true, color: 'pink' });
 legra.rectangle(2, 2, 6, 6, { filled: true, color: 'green' });
 ```
 
-## Linear Path
+## Linear path
 
 Draws a set of lines connecting the specified points.
 `points` is an array of points. Each point is an array with 2 values - `[x, y]`
