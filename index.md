@@ -6,6 +6,8 @@ Legra (**Le**go brick **Gra**phics) is a small (*3.1kB gzipped*) JavaScript libr
 
 The size and color of the bricks used can be configured. Legra can be used to create fun digital sketches, diagrams, or data visualizations.
 
+[View on Github](https://github.com/pshihn/legra)
+
 ## Examples
 
 Here are some examples....
