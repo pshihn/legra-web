@@ -2,6 +2,8 @@
 layout: base-layout.njk
 ---
 
+# Legra
+
 Legra (**Le**go brick **Gra**phics) is a small (*3.1kB gzipped*) JavaScript library that lets you draw using LEGO® like brick shapes on an HTML `<canvas>` element. This library defines basic graphics primitives like lines, rectangles, polygons, ellipses, bézier curves, etc. All shapes are drawn either outlined or filled in.
 
 The size and color of the bricks used can be configured. Legra can be used to create fun digital sketches, diagrams, or data visualizations.
