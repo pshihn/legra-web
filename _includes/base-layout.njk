@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegraJS</title>
+  <meta name="description" content="Create graphics using Lego-like bricks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://legrajs.com">
+  <meta property="og:title" content="Legra - LEgo brick GRAphics">
+  <meta property="og:description" content="Legra - Create graphics using Lego-like bricks">
+  <meta property="og:image" content="https://shihn.ca/images/logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="800">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Legra - LEgo brick GRAphics">
+  <meta name="twitter:description" content="Legra - Create graphics using Lego-like bricks">
+  <meta name="twitter:image" content="https://shihn.ca/images/logo.jpg">
+  <meta name="twitter:image:width" content="1024">
+  <meta name="twitter:image:height" content="800">
+  <link rel="icon" href="/images/fav.jpg" type="image/jpeg">
+
+  <style>
+    body {
+      margin: 0;
+      font-weight: 400;
+      line-height: 1.756;
+      font-size: 18px;
+      font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: subpixel-antialiased;
+      color: #08080B;
+      --highlight-color: #1565C0;
+      --title-color: #D81B60;
+    }
+    main {
+      padding: 16px 12px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    a, a:hover, a:visited {
+      color: var(--highlight-color, inherit);
+      outline: none;
+      font-weight: 300;
+      text-decoration: none;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 26px;
+      color: var(--title-color);
+      margin: 1em 0 0;
+    }
+    pre,
+    code {
+      font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+      line-height: 1.5;
+      font-size: 14px;
+      background: #f0f0f0;
+      padding: 2px 5px;
+    }
+    pre {
+      font-size: 14px;
+      line-height: 1.375;
+      direction: ltr;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      -moz-tab-size: 2;
+      -o-tab-size: 2;
+      tab-size: 2;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+      padding: 1em;
+      margin: .5em 0;
+      background-color: #f6f6f6;
+    }
+
+    img {
+      max-width: 100%;
+      box-sizing: border-box;
+      display: block;
+    }
+    
+    @media(hover: hover) {
+      a:hover {
+        box-shadow: 0 2px;
+      }
+    }
+
+    @media(max-width: 600px) {
+      pre[class*="language-"] {
+        padding: 0.5em;
+      }
+      code[class*="language-"],
+      pre[class*="language-"] {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+</head>
+
+<body>
+  <article>
+    <header>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+  </article>
+
+  <script>
+    window.ga = window.ga || ((...args) => (ga.q = ga.q || []).push(args));
+    ga("create", "UA-134693493-5", "auto");
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+    const s = document.createElement("script");
+    s.src = "https://www.google-analytics.com/analytics.js";
+    document.head.appendChild(s);
+  </script>
+</body>
+
+</html>
