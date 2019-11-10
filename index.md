@@ -12,7 +12,15 @@ The size and color of the bricks used can be configured. Legra can be used to cr
 
 ## Examples
 
-Here are some examples....
+<a href="https://glitch.com/~legra-pie-chart" class="example">
+<img src="/images/pie-chart.png" alt="Pie chart example">
+<div>Simple pie chart</div>
+</a>
+
+<a href="https://glitch.com/~legra-pie-chart" class="example">
+<img src="/images/pie-chart.png" alt="Pie chart example">
+<div>Simple pie chart</div>
+</a>
 
 ## Install
 
