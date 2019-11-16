@@ -4,7 +4,7 @@ layout: base-layout.njk
 
 # Legra
 
-Legra (**Le**go brick **Gra**phics) is a small (*3.1kB gzipped*) JavaScript library that lets you draw using LEGO® like brick shapes on an HTML `<canvas>` element. This library defines basic graphics primitives like lines, rectangles, polygons, ellipses, bézier curves, etc. All shapes are drawn either outlined or filled in.
+Legra (**Le**go brick **Gra**phics) is a small (*3.35KB gzipped*) JavaScript library that lets you draw using LEGO® like brick shapes on an HTML `<canvas>` element. This library defines basic graphics primitives like lines, rectangles, polygons, ellipses, bézier curves, etc. All shapes are drawn either outlined or filled in.
 
 The size and color of the bricks used can be configured. Legra can be used to create fun digital sketches, diagrams, or data visualizations.
 
@@ -12,15 +12,22 @@ The size and color of the bricks used can be configured. Legra can be used to cr
 
 ## Examples
 
-<a href="https://glitch.com/~legra-pie-chart" class="example">
+<a href="https://legra-smiley.glitch.me/" class="example">
+<img src="/images/smiley.png" alt="Animated smiley example">
+<div>Animated smiley face</div>
+</a>
+
+<a href="https://legra-monalisa.glitch.me/" class="example">
+<img src="/images/monalisa.png" alt="Mona Lisa draw example">
+<div>Mona Lisa</div>
+</a>
+
+<a href="https://legra-pie-chart.glitch.me/" class="example">
 <img src="/images/pie-chart.png" alt="Pie chart example">
 <div>Simple pie chart</div>
 </a>
 
-<a href="https://glitch.com/~legra-pie-chart" class="example">
-<img src="/images/pie-chart.png" alt="Pie chart example">
-<div>Simple pie chart</div>
-</a>
+All examples with source are available on [Legra Glitch collection](https://glitch.com/@pshihn/legra)
 
 ## Install
 
@@ -170,6 +177,22 @@ Draws a quadratic curve from `(x1, y1)` to `(x2, y2)` with `(cpx, cpy)` as the c
 
 legra.quadraticCurve(3, 3, 8, 30, 18, 1, 22, 14);
 ```
+
+## Draw image
+Draws an image at point `dst`. Optionally, one can provide the size of the image to be drawn, and the source area to be drawn. Points and Sizes are defined as an array of two number `[x, y]` and `[width, height]` respectively. 
+
+![Draw image example - Mona Lisa](/images/monalisa-big.jpg)
+```javascript
+// drawImage(image, dstPoint [, dstSize, srcPoint, srcSize])
+
+legra.drawImage(image, [0, 0]);
+```
+
+## Future work
+
+The current version of Legra is not optimized for large canvases. Legra can be used with an OffscreenCanvas in a worker thread to improve perceived performance. 
+
+A future version should use a WebGL shader for rendering.
 
 
 ## Credits
